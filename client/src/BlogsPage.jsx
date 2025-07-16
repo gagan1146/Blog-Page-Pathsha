@@ -1,6 +1,7 @@
 import React from 'react'
 import search_icon from './assets/search-icon.png'
 import './BlogsPage.css'
+import Card from './components/Card'
 
 const BlogsPage = () => {
   return (
@@ -24,6 +25,7 @@ const BlogsPage = () => {
           <div className="skills1"></div>
 
         </div>
+        <Card/>
     </div>
   )
 }
