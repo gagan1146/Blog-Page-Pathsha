@@ -1,0 +1,82 @@
+.blog-card {
+  width: 548px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 548px;
+  height: 280px;
+  overflow: hidden;
+}
+
+.blog-image {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
+.latest-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #4f46e5; /* Indigo-600 */
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.blog-content {
+  padding: 0 16px 16px;
+}
+
+.blog-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #101828;
+}
+
+.blog-description {
+  font-size: 14px;
+  color: #667085;
+  margin-bottom: 16px;
+}
+
+.blog-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+.author-name {
+  font-weight: 500;
+  color: #101828;
+}
+
+.date-time {
+  font-size: 12px;
+  color: #667085;
+}
