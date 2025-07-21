@@ -1,21 +1,46 @@
+/* Parent container to arrange cards side by side */
+.cards-wrapper, #latests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+/* Individual card styling */
 .blog-card {
-  .blog-card {
-  width: 100%; /* Grid will manage how wide each card is */
-  max-width: 100%;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.063rem 0.125rem rgba(16, 24, 40, 0.05);
-  background-color: #fff;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: 32%;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+  background-color: #fff;
+  overflow: hidden;
   font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive for tablets */
+@media (max-width: 992px) {
+  .blog-card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 48%;
+  }
+}
+
+/* Responsive for mobiles */
+@media (max-width: 600px) {
+  .blog-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 .image-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 548 / 280; /* maintains same image proportion */
+  aspect-ratio: 548 / 280;
   overflow: hidden;
 }
 
@@ -38,7 +63,7 @@
 }
 
 .blog-content {
-  /* padding: 0 1rem 1rem; */
+  padding: 0 1rem 1rem;
 }
 
 .blog-title {

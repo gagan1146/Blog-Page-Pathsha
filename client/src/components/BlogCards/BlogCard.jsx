@@ -1,6 +1,7 @@
 import React from 'react';
 import './BlogCard.css';
 
+
 const BlogCard = ({ blog }) => {
   return (
     <div className="blog-card">
