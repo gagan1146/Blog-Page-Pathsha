@@ -1,66 +1,68 @@
 .blog-card {
-  width: 548px;
-  border-radius: 8px;
-  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+  .blog-card {
+  width: 100%; /* Grid will manage how wide each card is */
+  max-width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.063rem 0.125rem rgba(16, 24, 40, 0.05);
   background-color: #fff;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
   font-family: 'Poppins', sans-serif;
 }
 
 .image-wrapper {
   position: relative;
-  width: 548px;
-  height: 280px;
+  width: 100%;
+  aspect-ratio: 548 / 280; /* maintains same image proportion */
   overflow: hidden;
 }
 
 .blog-image {
   width: 100%;
   height: 100%;
-  object-fit:contain;
+  object-fit: contain;
 }
 
 .latest-badge {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  background-color: #4f46e5; /* Indigo-600 */
+  top: 1rem;
+  left: 1rem;
+  background-color: #4f46e5;
   color: #fff;
-  padding: 6px 12px;
-  font-size: 12px;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  border-radius: 6px;
+  border-radius: 0.375rem;
 }
 
 .blog-content {
-  padding: 0 16px 16px;
+  /* padding: 0 1rem 1rem; */
 }
 
 .blog-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin: 0 0 8px 0;
+  margin: 0 0 0.5rem 0;
   color: #101828;
 }
 
 .blog-description {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #667085;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .blog-footer {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .author-avatar {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -68,7 +70,7 @@
 .author-info {
   display: flex;
   flex-direction: column;
-  font-size: 13px;
+  font-size: 0.813rem;
 }
 
 .author-name {
@@ -77,6 +79,6 @@
 }
 
 .date-time {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #667085;
 }

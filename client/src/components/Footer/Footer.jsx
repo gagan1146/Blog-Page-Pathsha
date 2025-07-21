@@ -1,56 +1,57 @@
 import React from 'react';
 import './Footer.css';
+import { FaFacebook, FaYoutube, FaLinkedin, FaTelegram, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-grid">
-        <div>
-          <h4>Company</h4>
-          <ul>
-            <li>About Us</li>
-            <li>Success Stories</li>
-            <li>Blogs</li>
-            <li>Events</li>
-          </ul>
+      <div className="footer-inner">
+        <div className="footer-columns">
+          <div className="footer-col">
+            <h4 className="footer-heading">COMPANY</h4>
+            <p className="footer-link">About Us</p>
+            <p className="footer-link">Success Stories</p>
+            <p className="footer-link">Blogs</p>
+            <p className="footer-link">Events</p>
+          </div>
+
+          <div className="footer-col">
+            <h4 className="footer-heading">COURSES</h4>
+            <p className="footer-link">Renaissance for Top Tech Companies</p>
+            <p className="footer-link">Low Level Design and Concurrency</p>
+            <p className="footer-link">Crash Course in Data Structures & Algorithms</p>
+            <p className="footer-link">Backend Development with Java Spring Boot</p>
+            <p className="footer-link">Begin with Programming in C++</p>
+            <p className="footer-link">Become a Python Expert</p>
+            <p className="footer-link">System Design for professionals</p>
+            <p className="footer-link">Be a Data Engineer</p>
+            <p className="footer-link">Full Stack Development in MERN</p>
+          </div>
+
+          <div className="footer-col">
+            <h4 className="footer-heading">SERVICES</h4>
+            <p className="footer-link">Get Scholarship</p>
+            <p className="footer-link">Teach with us</p>
+            <p className="footer-link">Join Our Community</p>
+          </div>
+
+          <div className="footer-col">
+            <h4 className="footer-heading">PRIVACY POLICY</h4>
+            <p className="footer-link">Terms & Conditions</p>
+            <p className="footer-link">Refund Policy</p>
+          </div>
         </div>
 
-        <div>
-          <h4>Courses</h4>
-          <ul>
-            <li>Renaissance for Top Tech Companies</li>
-            <li>Low Level Design and Concurrency</li>
-            <li>Crash Course in Data Structures & Algorithms</li>
-            <li>Backend with Java Spring Boot</li>
-            <li>Begin with Programming in C++</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Services</h4>
-          <ul>
-            <li>Get Scholarship</li>
-            <li>Teach with Us</li>
-            <li>Join Our Community</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Privacy Policy</h4>
-          <ul>
-            <li>Terms & Conditions</li>
-            <li>Refund Policy</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="footer-bottom">
-        <p>All Rights Reserved with @Programming Pathshala</p>
-        <div className="social-icons">
-          <a href="#"><i className="fa fa-facebook"></i></a>
-          <a href="#"><i className="fa fa-twitter"></i></a>
-          <a href="#"><i className="fa fa-instagram"></i></a>
-          <a href="#"><i className="fa fa-linkedin"></i></a>
+        <div className="footer-bottom">
+          <p className="footer-copy">All Right Reserved with @Programming Pathshala</p>
+          <div className="footer-socials">
+            <div className="icon"><FaFacebook /></div>
+            <div className="icon"><FaYoutube /></div>
+            <div className="icon"><FaLinkedin /></div>
+            <div className="icon"><FaTelegram /></div>
+            <div className="icon"><FaInstagram /></div>
+            <div className="icon"><FaTwitter /></div>
+          </div>
         </div>
       </div>
     </footer>
