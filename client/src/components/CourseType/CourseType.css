@@ -1,22 +1,28 @@
 .cards-section {
-  margin: 2rem 0;
-  padding: 0 1rem;
+  margin-top: 40px;
+  margin-bottom: 32px;
+  padding: 0 5.5vw;
 }
 
 .latests {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: flex-start;
+  gap: 40px;
+  justify-content: space-between;
 }
 
 .latests > * {
-  flex: 1 1 calc(50% - 20px); /* Two cards per row by default */
+  flex: 1 1 calc(50% - 20px);
   max-width: calc(50% - 20px);
+  min-width: 300px;
 }
 
-/* For smaller screens (tablet) */
+/* Responsive design */
 @media (max-width: 768px) {
+  .latests {
+    flex-direction: column;
+  }
+
   .latests > * {
     flex: 1 1 100%;
     max-width: 100%;
@@ -24,10 +30,14 @@
 }
 
 .items-section {
-  padding: 2rem 1rem;
+  padding: 32px 5.5vw;
 }
 
 .items-section h1 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #000000;
+  margin-bottom: 24px;
 }

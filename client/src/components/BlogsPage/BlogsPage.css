@@ -1,45 +1,67 @@
-
-
+/* Container */
 #blogs-page {
-    padding-top: 50px;
-    padding-left: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1120px;
-    height: 4324px;
-    margin: 0 auto;
-    gap: 60px;
-    top: 156px;
-    left: 160px;
+  padding: 5rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+  max-width: 1140px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Heading Block */
 .heading {
-    width: 707px;
-    height: 124px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 720px;
+  width: 100%;
 }
 
+/* Main Heading */
 #heading-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: 2%;
-    color: #000000;
-    text-align: center;
-    height: 40px;
-    width: 707px;
-    margin: 0;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #101828;
+  margin: 0;
 }
 
+/* Items row (Write Post button + optional subheading) */
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Write a Post Button */
+.startPost {
+  background-color: #4f46e5;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.startPost:hover {
+  background-color: #4338ca;
+}
+
+/* Search Bar */
 .input-wrapper {
   position: relative;
-  width: 548px;
+  width: 100%;
+  max-width: 548px;
   height: 44px;
+  margin: 0 auto;
 }
 
 .search_icon {
@@ -47,78 +69,76 @@
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  width: 16.23px;
-  height: 16.23px;
+  width: 16px;
+  height: 16px;
   pointer-events: none;
 }
 
 #heading-input {
-  width: 548px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 6px;
-  border: 1px solid #D0D5DD;
+  border: 1px solid #d0d5dd;
   padding: 12px 20px 12px 40px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
+  color: #191d23;
   background-color: #fff;
-  color: #191D23;
+  outline: none;
 }
 
+/* Course Type Filters (skills) */
 .skills {
-  width: 792px;
-  height: 80px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  font-family: 'Poppins', sans-serif;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  color: #191d23;
+  font-size: 0.875rem;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: #191D23;
+  text-align: center;
 }
 
 .skills1 {
   display: flex;
-  justify-content: space-around;
-  padding: 8px 16px;
-  border-radius: 4px;
-  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
 }
 
 .skills1 p {
-  margin: 0;
-  padding: 4px 8px;
-  white-space: nowrap;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  background-color: #f3f4f6;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
+.skills1 p:hover {
+  background-color: #e0e7ff;
+}
+
+/* Cards Section */
 .cards-section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 2rem;
   align-items: center;
 }
 
 .cards-section h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 600;
-  color: #000;
+  color: #101828;
   margin: 0;
 }
 
+/* Blog Card Grid (reused from blogcard CSS) */
 #latests {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
   width: 100%;
-}
-
-
-
-.startPost{
-  display: flex; 
-   background-color: blue;
-  color: white;
-  margin: 10px 20px; 
+  padding-top: 1rem;
 }

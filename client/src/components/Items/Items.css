@@ -1,0 +1,50 @@
+/* Container for each section */
+.items-section {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  padding: 0 5.5vw;
+}
+
+/* Heading style */
+.items-section > h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #101828;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Wrapper for cards */
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: flex-start;
+}
+
+/* Cards sizing */
+.cards-wrapper > * {
+  flex: 1 1 calc(33.333% - 2.5rem);
+  max-width: calc(33.333% - 2.5rem);
+  min-width: 280px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .cards-wrapper > * {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-wrapper {
+    justify-content: center;
+  }
+  .cards-wrapper > * {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
