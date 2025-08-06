@@ -4,6 +4,15 @@ import Items from '../Items/Items';
 import './CourseType.css';
 
 const CourseType = ({ courseType }) => {
+  const allHeadings = [
+    'Data Structure & Algorithms',
+    'Interview Preparation',
+    'Competitive Programming',
+    'Student Experiences',
+    'About Us',
+    'Time and Space Complexity',
+  ];
+
   switch (courseType) {
     case 'all':
       return (
@@ -14,12 +23,9 @@ const CourseType = ({ courseType }) => {
               <Card isLatest={true} />
             </div>
           </div>
-          <Items heading="Data Structure & Algorithms" />
-          <Items heading="Interview Preparation" />
-          <Items heading="Competitive Programming" />
-          <Items heading="Student Experiences" />
-          <Items heading="About Us" />
-          <Items heading="Time and Space Complexity" />
+          {allHeadings.map((heading, index) => (
+            <Items key={index} heading={heading} courseType="all" />
+          ))}
         </>
       );
 
